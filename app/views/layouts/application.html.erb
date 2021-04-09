@@ -10,6 +10,25 @@
   </head>
 
   <body>
+    <!--ヘッダー制作中-->
+    <header>
+      <div class="header-f-container">
+        <div class="header-left">
+          <h1 class="header-logo"><%= link_to("両替金額管理システム", "/") %></h1>
+        </div>
+       
+        <div class="header-right">
+          <ul>
+            <li><%= link_to("About", "/about") %></li>
+            <li>新規登録</li>
+            <li>ログイン</li>
+            <li>入力</li>
+            <li>取引者一覧</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
     <%= yield %>
   </body>
 </html>
