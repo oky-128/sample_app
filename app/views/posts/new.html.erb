@@ -1,0 +1,17 @@
+<h1>入力フォーム</h1>
+<%= form_tag("/create") do %>
+  <p>日付：</p>
+  <input name="date"></input>
+  <p>名前：</p>
+  <input name="name"></input>
+  <p>金額：</p>
+  <input name="money"></input>
+  <p>職業：</p>
+  <input name="job"></input>
+  <p>目的：</p>
+  <input name="purpose"></input>
+  <p>メモ：</p>
+  <input name="memo"></input>
+  <input class="btn" type="submit" value="送信"></input>
+<% end %>
+<%= link_to("トップに戻る", "/") %>

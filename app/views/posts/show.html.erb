@@ -6,6 +6,10 @@
   <p><%= post.job %></p>
   <p><%= post.purpose %></p>
   <p><%= post.memo %></p>
+  <%= link_to "編集", "posts/" + post.id.to_s+ "/edit" %>
+  <%= link_to "削除", "posts/" + post.id.to_s, method: :delete %>
 <% end %>
+<!--取引額の合計を表示--><!--:delimitedは数字を3桁区切りにしてる-->
+<p><%= "合計" + @money_array.sum.to_s(:delimited) + "円" %></p>
 <p><%= link_to("戻る", "index") %></p>
 <p><%= link_to("トップに戻る", "/") %></p>
