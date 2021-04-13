@@ -1,0 +1,11 @@
+<h1>取引一覧</h1>
+<% @posts.each do |post| %>
+  <p><%= post.date %></p>
+  <p><%= post.name %></p>
+  <p><%= post.money %></p>
+  <p><%= post.job %></p>
+  <p><%= post.purpose %></p>
+  <p><%= post.memo %></p>
+<% end %>
+<p><%= link_to("戻る", "index") %></p>
+<p><%= link_to("トップに戻る", "/") %></p>

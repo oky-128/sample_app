@@ -1,5 +1,5 @@
 <h1>取引者一覧</h1>
 <% @posts.each do |post| %>
-  <p><%= post.name %></p>
+  <p><%= link_to(post.name, show_path(name: post.name)) %></p>
 <% end %>
 <p><%= link_to("トップに戻る", "/") %></p>
